@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS project</title>
     <style>
+        /* introducing new font */
         @font-face {
             font-family: irani;
             src: url(IranNastaliq.ttf);
@@ -14,30 +15,55 @@
             font-family: irani;
             text-decoration: underline;
             text-decoration-style:dotted;
-            /* color:blue */
-            color:rgb(47, 155, 69);
-            /* color:rgba(25,125,25,.4); 
-            /* rgba has four argoman, the last one is for shading */
-            /*------- https://flatuicolors.com/ ------------find some good colors  */
-            
+            color:rgb(25, 134, 55);
+            border: 5px solid red;
+            /* border-width: 1em; */
+            /* border-width: 4px 1.25em; */
+            /* border-width: 3px 2em 1.5cm; */
+            /* border-width: 10px 1em 8cm 7rem; */
+            /* outline: 3px solid yellow; */
+            border-radius: 15px ;     
         }
-        a{
-            text-decoration: none;
+        img{
+            width: 200px;
+            border: 2px solid red;
+            /* border-radius: 20px; */
+            border-radius: 50%;
         }
+        
     </style>
     
 </head>
 <body>
-    <h1 >COLORS in style, min 54:14</h1>
+    <h1 >border and outline , min 58:26</h1>
     <h2>الا یا ایهاالساقی  ، حالت چطوره  که عشق آسان نمود اول ولی افتاد مشکلها</h2>
     <p>ّ
-        color:blue <br/>
-        color:rgb(47, 155, 69)<br/>
-        color:rgba(25,125,25,.4)<br/>
-        rgba has four argoman, the last one is for shading,br/>
-        ------- https://flatuicolors.com/ ------------find some good colors
+        border-width: 1em;
+        border-width: 4px 1.25em;
+        border-width: 3px 2em 1.5cm;
+        border-width: 10px 1em 8cm 7rem;
+        outline: 3px solid yellow;
+        border-radius: 15px ; around the border is circular
+
+        /* Keyword values */
+        border-width: thin;
+        border-width: medium;
+        border-width: thick;
+
+        <!-- <length> values -->
+        border-width: 4px;
+        border-width: 1.2rem;
+
+        /* vertical | horizontal */
+        border-width: 2px 1.5em;
+
+        /* top | horizontal | bottom */
+        border-width: 1px 2em 1.5cm;
+
+        /* top | right | bottom | left */
+        border-width: 1px 2em 0 4rem;
     </p>
-    <a href="#" >Click here</a>
+    <img src="MR0192.jpg" alt="loading image problem">
    
    
     
