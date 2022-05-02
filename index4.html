@@ -50,26 +50,30 @@
         a:hover{
             color:coral;
         }
-        table,th,td{
-            border: 1px solid blue;
-        }
-        table{
-            border-collapse:collapse;
-            width: 50%;
-        }
-        th{
+        th,td{
+            padding: 15px;
             text-align: center;
-            background-color: aquamarine;
+            border-bottom: 1px solid blue;
+            /* background-color: rgba(235, 202, 221, 0.781); */
         }
         
-        td{
-            text-align: center;
-            vertical-align:top;
-            height: 30px;
-            color:red;
-            background-color: aqua;
+        tbody tr:nth-child(odd){
+            background-color: rgb(177, 134, 218);
         }
-
+        tbody tr:hover{
+            background-color: brown;
+        }
+        th{
+            color:blanchedalmond;
+            background-color: rgb(107, 43, 226);
+        }
+        table{
+            /* border-collapse: collapse; */
+            empty-cells: show;
+            table-layout: auto;
+            /* width:200px; */
+            width: 100%;
+        }
         
 
     </style>
@@ -93,7 +97,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>Anita</td>
+                <td>AnitaJanBabababababa</td>
                 <td>Anili</td>
                 <td>15</td>
             </tr>
@@ -102,12 +106,18 @@
                 <td>Pelpel</td>
                 <td>5</td>
             </tr>
+            <tr>
+                <td>Felfel</td>
+                <td>Shilim</td>
+                <td>4</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
               <td>Footer content 1</td>
-              <td>Footer content 2</td>
-              <td>Footer 3</td>
+              <td></td>
+              <td></td>
+             
             </tr>
           </tfoot>
         
