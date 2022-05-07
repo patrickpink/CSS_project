@@ -32,32 +32,32 @@
             outline: 3px solid yellow;
             border-radius: 15px ;     
         }
-        /* div + p{ */
-        div ~ p{
-        /* div  p{ */
-            background-color: red;
+
+        p{
+            display: none;
+            background-color: orange;
+            padding: 20px;
         }
-        
+        #d1{
+            background-color: red;
+        }  
+        #d1:hover p{
+            display: block;
+            background-color: yellow;
+        }     
+
     </style>
     
 </head>
 <body>
-    <h1 > Combinator selectors, min 2:12':06"</h1>
+    <h1 > Sodo classes1, min 2:19':00"</h1>
     <h2>الا یا ایهاالساقی  ، حالت چطوره   که عشق آسان نمود اول ولی افتاد مشکلها</h2>
     
-    <div>
-        <p>lorem</p>
-        <p>lorem</p>
-        <section>
-            <p>lorem</p>
-        </section>
+    <div id="d1">
+        hover me 
+        <p>welcome </p>
     </div>
-    <div>
-        <p>lorem</p>
-    </div>
-    <p> lorem</p>
-    <p>lorem</p>
-    
+        
     
        
 </body>
