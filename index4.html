@@ -34,14 +34,18 @@
         }
 
         p::after{
-            /* content:open-quote ">>>>" linear-gradient(#e66465, #9198e5) url(MR0192.jpg) ; */
-            /* content: image-set; */
-            background-image: url(MR0192.jpg);
-            background-size: 300px 300px;
-            display: inline-block;
-            width: 300px; 
-            height: 300px;
-            content:"";
+            /* content:open-quote ">>>>" linear-gradient(#b9e664, #9198e5); */
+            /* content: linear-gradient(to left top, blue, red); */
+            /* content: linear-gradient(0deg, blue, green 40%, red); */
+            /* content: linear-gradient(.25turn, red, 10%, blue); */
+            /* content: linear-gradient(30deg, rgb(32, 23, 23) 20% 40%, rgb(0, 255, 13) 60% 90%);; */
+            /* content:linear-gradient(red 40%, yellow 30%, blue 65%); */
+            /* content: linear-gradient(45deg, red, rgb(81, 255, 0)); */
+            content: linear-gradient(45deg, orange 50%, rgb(67, 235, 67));
+            content: linear-gradient(to right,
+     red 20%, orange 20% 40%, yellow 40% 60%, green 60% 80%, blue 80%);;
+
+                 
         }
 
        
@@ -57,7 +61,9 @@
     <p>content: open-quote;
         content: close-quote;
         content: no-open-quote;
-        content: no-close-quote;</p>
+        content: no-close-quote;
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient">linear-gradient</a>
+    </p>
     
        
 </body>
