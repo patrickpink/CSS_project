@@ -54,8 +54,21 @@
             border: 2px dashed blue;
             width: 50%;
         }
-        textarea{
-            resize: none;
+        select{
+            width: 180px;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: aquamarine;
+            color: blue;
+            transition: width .5s ease-in;
+        }
+        select:focus{
+            background-color: coral;
+            color: crimson;
+            border-color: black;
+            width: 50%;
         }
      
 
@@ -63,14 +76,26 @@
     
 </head>
 <body>
-    <h1 > textarea, min 2:38':20"</h1>
+    <h1 > selectbox, min 2:39':35"</h1>
     <h2>الا یا ایهاالساقی  ، حالت چطوره   که عشق آسان نمود اول ولی افتاد مشکلها</h2>
     
     <form action="">
-        <label for="name">Name:</label>
-        <input id="name" type="text" required><br/>
-        <label for="story">Tell us your story:</label><br>
-        <textarea id="story" name="story" rows=5 cols="30">It was an ancient story...</textarea>
+        <div>
+            <label for="name">Name:</label>
+        <input id="name" type="text" required>
+        </div>
+        <div>
+            <label for="story">Choose a pet</label>
+            <select id="pet_select" name="pet" required>
+                <option value="">Please select a pet</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="Rabbit">Rabbit</option>
+                <option value="hamster">Hamster</option>
+            </select>
+        </div>
+
+        
     </form>
     
        
