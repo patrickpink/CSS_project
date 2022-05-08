@@ -33,15 +33,18 @@
             border-radius: 15px ;     
         }
 
-       .sp1{
-           background-color: aqua;
-       }
-       .sp1::before{
-           content: "LOOK HERE:  ";
-           background-color: yellow;
-           border-bottom: blue;
-           border-style:dashed;
-       }
+        p::after{
+            /* content:open-quote ">>>>" linear-gradient(#e66465, #9198e5) url(MR0192.jpg) ; */
+            /* content: image-set; */
+            background-image: url(MR0192.jpg);
+            background-size: 300px 300px;
+            display: inline-block;
+            width: 300px; 
+            height: 300px;
+            content:"";
+        }
+
+       
        
 
     </style>
@@ -51,8 +54,10 @@
     <h1 > first line, min 2:25':07"</h1>
     <h2>الا یا ایهاالساقی  ، حالت چطوره   که عشق آسان نمود اول ولی افتاد مشکلها</h2>
     
-    <span class="sp1">Notice where the orange box is.</span>
-        
+    <p>content: open-quote;
+        content: close-quote;
+        content: no-open-quote;
+        content: no-close-quote;</p>
     
        
 </body>
