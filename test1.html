@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+    <script src="https://kit.fontawesome.com/603d0ee93a.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: nastaliq;
+            src: url(IranNastaliq.ttf);
+        }
+        h1 {
+            color:red;
+            font-size: 30px;
+            /* direction:rtl;  */
+            /* for right to left allignment */
+            text-decoration:underline;
+            word-spacing: 20px;            
+            text-transform:capitalize;
+            text-shadow:0px 5px 10px rgb(255, 238, 0);
+            background-color: aqua;
+        }
+        h2{
+            width: 50%;
+            direction:none;
+            font-family:nastaliq;
+            word-spacing: 10px;
+            text-decoration: underline;
+            text-decoration-style:dotted;
+            text-decoration-color: #EA2027;
+            border: 5px solid blue;
+            outline: 5px solid yellow;
+            border-radius: 10px;
+            padding-left: 30px;
+            margin: 10px;
+            background-color: aqua;  
+        }
+        a{
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            margin:10px 10px 10px 10px;
+            border: 5px ridge yellow;
+            border-radius: 10px;
+            /* display: inline-block; */
+        }
+        a:hover{
+            background-color: #EA2027;
+            border: 5px ridge rgb(0, 174, 255);
+            color:black;
+        }
+        #p1 {
+            background-color: coral;
+            color:black;
+            border: 10px solid blue;
+            border-bottom: 5px solid blue;
+            border-top-left-radius: 5px ;
+            padding: 20px;
+            margin:10px; 
+            max-width: 700px;  
+            min-height: 100px;
+            position: relative;                  
+        }
+        #s1{
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+        }
+        #s2{
+            display: none;
+        }
+        #p1:hover #s2{
+            display: block;
+        }
+        
+        ul.a li{
+            background-color:rgb(198, 226, 43);
+            color: rgb(238, 70, 18);
+            margin:5px;
+            padding-left: 10px;
+        }
+        ul.a{
+            list-style: disc;
+            background-color: rgb(17, 0, 255);
+            color: rgb(255, 208, 0);
+            padding: 10px 10px 10px 20px;
+            margin: 30px 10px 10px 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 50%;
+        }
+        table, th,td {
+            border: 5px solid black;
+        }
+        th {
+            background-color: rgb(51, 210, 30);
+            vertical-align:middle;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+        }
+        td {
+            /* background-color: aqua; */
+            vertical-align: middle;
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            background-color: rgb(33, 184, 184);
+        }
+        tbody tr:hover{
+            background-color: #EA2027;
+            color: white;
+        }
+        #cap1{
+            border: 5px solid red;
+            border-bottom-style: none;
+            background-color:darkgoldenrod;
+            color: white;
+            font-family: calibre;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+        }
+        img{
+            width: 200PX;
+            height: 200px;
+            float:right;
+        }
+        p::selection{
+            background-color: #EA2027;
+            color: aliceblue;
+        }
+        #p2::first-line{
+            color:red;
+        }
+        #in1:focus{
+            background-color: gold;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        input[type=text]{
+            background-color: aqua;
+            width: 200px;
+            padding: 10px 20px;
+            border: none;
+            margin:5px 0px;
+            border-bottom: 5px solid rebeccapurple;
+            border-radius: 20px;
+            outline: none;
+            transition: width 0.8s ease-out;
+
+        }
+        input[type=text]:focus{
+            background-color: burlywood;
+            border:2px dashed black;
+            width: 70%;
+        }
+        #textarea1{
+            background-color: antiquewhite;
+            color:#EA2027;
+            resize: none;
+        }
+        #textarea1:focus{
+            background-color:gold;
+            color:black;
+        }
+        select:focus{
+            background-color: coral;
+            color: rgb(14, 13, 13);
+            border-color: black;
+            width: 50%;
+        }
+        input[type=button],input[type=submit],input[type=reset]{
+            background-color: green;
+            padding: 10px;
+            margin: 2px 5px;
+            border: 10px;
+            border-radius: 10px;
+            cursor:pointer;
+            color:aqua;
+        }
+
+    </style>
+<body>
+    <h1 >style to font, min 46</h1>
+    <h2>الا یا ایهاالساقی  ، حالت چطوره         که عشق آسان نمود اول ولی افتاد مشکلها</h2>
+    <p id="p1">
+        <span id="s1">Peid</span>
+        <span id="s2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dicta!</span>
+    <p>
+    <p>sodo class , min 1:39:50<br/>a:link(link spec), a:visited(spec after visiting)-----
+    <a href="#">Click here</a></p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <div id="d1">
+        <table>
+            <caption id="cap1">My table</caption>
+            <thead>
+                <tr>
+                    <th>Fname</th>
+                    <th>Lname</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ani</td>
+                    <td>Vanili</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Pedi</td>
+                    <td>Pelian</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Pesar</td>
+                    <td>Bala</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Dokhtar</td>
+                    <td>Baba</td>
+                    <td>15</td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+    <p id="p2"><img src="MR0192.jpg" alt="loading problem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum totam soluta inventore labore magni necessitatibus laborum quasi, quaerat debitis. Consequuntur quisquam possimus corporis maxime odio accusamus, exercitationem ipsam impedit vel alias aliquam, perspiciatis et aspernatur eius consectetur autem sunt dolores dignissimos rerum dolor libero esse culpa! Vel, qui harum?</p><br/>
+    
+    <form action="" method="get" class="form1">
+        <div class="form1">
+            <label for="in1">Name </label>
+            <input id="in1" type="text" required >
+        </div>
+        <div class="form1">
+            <label for="in2">FName</label>
+            <input id="in2" type="text" required >
+        </div>
+        <div class="form1">
+            <label for="textarea1" style="color:red">Tell us your story:</label><br>
+            <textarea id="textarea1" name="story" rows=5 cols="30" >It was an ancient story...</textarea>
+        </div>
+        <div class="form1">
+            <input id="in3" type="submit" required >
+            <input id="in3" type="button" value="send">
+            
+        </div>
+    </form>
+    <div class="selection">
+        <label for="pet_select" style="color:#EA2027 ;">SELECT YOUR PET:</label>
+        <select name="pets" id="pet_select">
+            <option value="">Select your pet</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="hamster">Hamster</option>
+            <option value="bird">Bird</option>
+
+        </select>
+
+    </div>
+
+    
+    
+    
+
+        
+</body>
+</html>
