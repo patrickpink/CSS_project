@@ -6,43 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS_test2</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- check all types of colors: flatuicolors.com -->
+    <!-- go to fontawesome.com for icon -->
+    <script src="https://kit.fontawesome.com/603d0ee93a.js" crossorigin="anonymous"></script>
     <style>
         @font-face {
             font-family:irani;
             src: url(IranNastaliq.ttf);
         }
-        h1 {
-            color: red;
-            font-size: 40 px;
-            font-weight: bold;
-            font-style: italic ;
-            text-align: center;
-            text-decoration:underline;
-            word-spacing: 50px;
-            letter-spacing: 10px;
-            text-transform:uppercase;
-            text-shadow: 10px -10px 10px rgb(47, 68, 255);
-        }
-        h2{
-            font-family: irani;
-            font-weight: bold;
-            color:blue;
-            word-spacing: 10px;
-            text-align: center;
-            
-            text-shadow: 5px -5px 5px rgb(142, 216, 112);
+
+        p::selection{
+            background-color: red;
+            color:white;
 
         }
-        p{
-            line-height: 30px;
+        input[type=text]:focus{
+            background-color: yellow;
+            border: 2px solid red;
+            width: 100%;
+            font-size: large;
+            
         }
-        
+        input[type=button] , input[type=submit]{
+            cursor:pointer;
+            background-color: darkkhaki;
+            padding:10px;
+            border: 2px solid red;
+            border-radius: 5px;
+            
+
+            
+        }
+        input[type=text] ,textarea{
+            display:block;
+            background-color: aqua;
+            padding: 5px 10px;
+            font-size: 15px;
+            margin: 8px 0px ;
+            border:none;
+            outline: none;
+            border-bottom: 2px solid blue;
+            border-radius: 10px;
+            width: 200px;
+            transition: width 0.4s ease-in-out ;
+            /* transition: font-size 0.4s ease-out; */
+        }
+        *{
+            box-sizing: border-box;
+        }
+        #ta1{
+            background-color:darkgoldenrod;
+            resize:none;
+            margin: 10px;
+        }
+        select{
+            width: 20%;
+            padding: 10px;
+            background-color: coral;
+            border:none;
+            border-bottom: 3px solid red;
+            outline: none;
+            border-radius: 10px;
+            /* transition: width 0.5s ease-out; */
+            
+        }
+                        
     </style>
 </head>
 <body>
-    <h1 > Hello Neon</h1>
-    <h2> الا یا ایهاالساقی، که عشق آسان نمود اول  ولی افتاد مشکلها</h2>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, odio qui. Veritatis cumque eveniet quia neque vero odit perferendis culpa ad, minus saepe incidunt consectetur quas voluptatibus fuga libero quod tenetur magni. Maiores sed explicabo, ex dicta earum dolorem sunt ratione laboriosam beatae aliquam, natus dolorum nesciunt itaque quasi repellat.</p>
-
+    
+    <p>lorem</p>
+    <p>lorem</p>
+    
+    <form action="">
+        <label for="fname">Name: </label>
+        <input type="text" id="fname">
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname">
+        <label for="email">Email: </label>
+        <input type="text" id="email">
+        <input type="submit" id="b1" value="Send"><br/>
+        <label >Password: <input type="password"></label>
+        <input type="submit" value="Save">
+        <fieldset>
+            <legend>Title</legend>
+            <label><input type="radio" name="radio"> Select me</label>
+          </fieldset>
+          <textarea name="" id="ta1" cols="30" rows="10">Write here</textarea>
+          <div>
+            <label for="select-pet">Select your pet: </label>
+            <select name="" id="">
+                <option value="">Choose an option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="parrot">Parrot</option>
+                <option value="fish">Fish</option>
+            </select>
+          </div>
+    </form>
 </body>
 </html>
